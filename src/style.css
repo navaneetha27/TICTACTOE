@@ -1,0 +1,28 @@
+.icon{
+    color:red;
+    font-size: 30px;
+}
+body{
+    background-color:#48dbfb;
+    background: #c31432; background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+    background: linear-gradient(to right, #240b36, #c31432);
+}
+.grid{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.box{
+    width:auto;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.sma{
+    background: #ffe897;
+    background: -moz-radial-gradient(top right, #ffe897,#05e9f9);
+    background: radial-gradient(to bottom left, #ffe897, #05f9bc);
+    background: -webkit-radial-gradient(top right, #ffe897, rgb(5, 249, 229));
+    border-radius: 10px;
+}
