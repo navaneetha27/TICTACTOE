@@ -20,40 +20,40 @@ function App(){
 
     }
     const findWinner=()=>{
-        if(tiktackArray[0]==tiktackArray[1] &&tiktackArray[0]==tiktackArray[2] && tiktackArray[0]!=""){
+        if(tiktackArray[0]===tiktackArray[1] &&tiktackArray[0]===tiktackArray[2] && tiktackArray[0]!==""){
             setWinMessage(tiktackArray[0]+" has won");
         }
-        else if(tiktackArray[3]==tiktackArray[4] && tiktackArray[3]==tiktackArray[5] &&tiktackArray[3]!="" ){
+        else if(tiktackArray[3]===tiktackArray[4] && tiktackArray[3]===tiktackArray[5] &&tiktackArray[3]!=="" ){
             setWinMessage(tiktackArray[3]+ " has won");
         }
-        else if(tiktackArray[6]==tiktackArray[7] && tiktackArray[6]==tiktackArray[8] &tiktackArray[7]!="" ){
+        else if(tiktackArray[6]===tiktackArray[7] && tiktackArray[6]===tiktackArray[8] &tiktackArray[7]!=="" ){
             setWinMessage(tiktackArray[6]+" has won");
         }
-        else if(tiktackArray[0]==tiktackArray[3] && tiktackArray[0]==tiktackArray[5] &tiktackArray[3]!="" ){
+        else if(tiktackArray[0]===tiktackArray[3] && tiktackArray[0]===tiktackArray[5] &tiktackArray[3]!=="" ){
             setWinMessage(tiktackArray[0]+ " has won");
         }
-        else if(tiktackArray[1]==tiktackArray[4] && tiktackArray[1]==tiktackArray[7] &tiktackArray[1]!="" ){
+        else if(tiktackArray[1]===tiktackArray[4] && tiktackArray[1]===tiktackArray[7] &tiktackArray[1]!=="" ){
             setWinMessage(tiktackArray[1]+ " has won");
 
         }
-        else if(tiktackArray[2]==tiktackArray[5] && tiktackArray[2]==tiktackArray[7] &tiktackArray[2]!="" ){
+        else if(tiktackArray[2]===tiktackArray[5] && tiktackArray[2]===tiktackArray[7] &tiktackArray[2]!=="" ){
             setWinMessage(tiktackArray[2]+ " has won");
         }
-        else if(tiktackArray[0]==tiktackArray[4] && tiktackArray[0]==tiktackArray[8] &tiktackArray[0]!="" ){
+        else if(tiktackArray[0]===tiktackArray[4] && tiktackArray[0]===tiktackArray[8] &tiktackArray[0]!=="" ){
             setWinMessage(tiktackArray[0]+ " has won");
         }
-        else if(tiktackArray[2]==tiktackArray[4] && tiktackArray[2]==tiktackArray[6] &tiktackArray[2]!="" ){
+        else if(tiktackArray[2]===tiktackArray[4] && tiktackArray[2]===tiktackArray[6] &tiktackArray[2]!=="" ){
             setWinMessage(tiktackArray[2]+ " has won");
         }
         else{
             var flag=0;
             for(var i=0;i<9;i++){
-                if(tiktackArray[i]==""){
+                if(tiktackArray[i]===""){
                     flag=1
                     break;
                 }
             }
-            if(flag==0){
+            if(flag===0){
                 setWinMessage("Game Drawn")
             }
         }
@@ -64,7 +64,7 @@ function App(){
             return toast("Game has got over",{type: "success"})
 
         }
-        if(tiktackArray[index]==""){
+        if(tiktackArray[index]===""){
             tiktackArray[index]=isCross?"cross":"circle";
             setIsCross(!isCross);
 
